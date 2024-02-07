@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Chivo:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    background: #e9e1c5;
+    font-family:Cardo;
+}
+
+.nav-container {
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+.nav{
+    width: 95%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.nav-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-item:nth-child(2){
+    flex: 4;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    text-align: left;
+}
+
+.nav-item:last-child{
+    margin-left: auto;
+}
+
+.nav-item a{
+    text-decoration: none;
+   color: #004225;
+}
+.nav-logo a{
+    font-family: "Cardo";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav-cta a{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-links a{
+    padding: 0 2em;
+    font-size: 14px;
+}
+
+.website-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #0f5132;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    padding: 2em;
+    display: flex;v
+}
+
+.header .col:nth-child(1){
+    flex: 3;
+}
+
+.header .col:nth-child(2){
+    flex: 2;
+    margin-top: 2em;
+}
+
+.header .col p{
+    position: relative;
+    left: 20px;
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Chivo;
+    color: #0f5132;
+}
+
+.ml12{
+    padding-right: 0.5em;
+    font-size: 6em;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.ml12 .letter{
+    display: inline-block;
+    line-height: 100%;
+}
+
+
+.hero-img {
+    width: 100%;
+    padding: 3em;
+    height: 700px;
+    border-radius: 0px;
+/*    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);    */
+}
+
+.about{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.abt1{
+    padding-top: 50px; 
+    padding-left: 50px;    
+}
+
+.abt2{
+    position: absolute;
+    top: 46%;
+    left:47%;
+    transform: translate(-50%, -50%);
+}
+.abt2 p{
+    font-size: 40px;
+    font-family: Chivo;
+    text-align: justify;
+    letter-spacing: -0.1em;
+    line-height: 110%;
+}
+
+section.works{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -50px;
+    display: flex;
+}
+
+.capabi{
+    font-family: Cardo;
+    background-color:  #0f5132;
+    color: #e9e1c5;
+    position: relative;
+    left: 15%;
+    padding: 40px;
+    width: 25%;
+    height: 65%;
+    font-size: 30px;
+}
+
+.des{
+    color: #e9e1c5;
+    height: 65%;
+    width: 43%;
+    position: relative;
+    left: 17%;
+    padding: 40px;
+    background-color:  #0f5132; 
+}
+
+section.the-works{
+    width: 100%;
+    height: 100vh;
+    background-color:  #0f5132;
+    color: #e9e1c5;
+}
+
+section.the-works h1{
+    padding: 100px;
+    font-family: Cardo;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+    
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.829);
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.829);
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
